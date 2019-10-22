@@ -1,6 +1,6 @@
 # PortfolioSite
 
-This is a Portofolio that is the final project of a front-end internship. It was made entirely from scratch, but the theme was 100% inspired from https://trendytheme.net/demo/wp/iamx-intro/
+This is a Portfolio that is the final project of a front-end internship. It was made entirely from scratch, but the theme was 100% inspired from https://trendytheme.net/demo/wp/iamx-intro/
 
 
 The "Works" section of the website includes 3 of the mini-games made during the internship:
