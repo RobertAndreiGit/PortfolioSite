@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Quiz</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<script src="backend.js"></script>
+<script src="play-game.js"></script>
+
+<div id="page-container">
+    <img src="quiz-game.png" alt="Quiz">
+    <div id="pre-game-start">
+        <button type="button" onclick="pg_startgame()">Start Game</button>
+    </div>
+    <div id="post-game-start" style="display: none">
+        <span id="game-over">Game Over!</span>
+        <span id="final-score"></span>
+        <span id="please-start">Please start a new game if you want to play again.</span>
+        <span id="current-question"></span>
+        <form id="answer-form">
+            <div id="question-answer">
+                <label>
+                    <input type="radio" name="question-answer" value="A" checked><span>A</span><br>
+                    <input type="radio" name="question-answer" value="B"><span>B</span><br>
+                    <input type="radio" name="question-answer" value="C"><span>C</span><br>
+                    <input type="radio" name="question-answer" value="D"><span>D</span><br>
+                </label>
+            </div>
+            <br>
+
+
+            <button type="button" onclick="pg_answer()">Make Guess</button>
+        </form>
+        <span id="timer">10</span>
+        <div id="button-container">
+            <button type="button" onclick="new_game()" id="new-game">New Game</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

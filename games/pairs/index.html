@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Pairs</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<script src="play-game.js"></script>
+
+<div id="page-container">
+    <img src="pairs-game.png" alt="Pairs">
+    <div id="pre-game-start">
+        <button type="button" onclick="start_game()">Start Game</button>
+    </div>
+
+    <div id="post-game-start" style="display: none">
+        <span id="number-list"></span>
+        <form>
+            <input type="number" id="nr1">
+            <input type="number" id="nr2">
+            <button type="button" onclick="make_guess()">Make Guess</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

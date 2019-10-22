@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Guess The Number</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<script src="backend.js"></script>
+<script src="play-game.js"></script>
+
+<div id="page-container">
+    <img src="gtn-game.png" alt="Guess">
+    <div id="game-not-started">
+        <h3>Select your interval</h3>
+        <form>
+            From
+            <input type="number" placeholder="min" id="min-nr">
+            to
+            <input type="number" placeholder="max" id="max-nr"><br>
+            <button type="button" onclick="start_game()">Start Game</button>
+        </form>
+    </div>
+    <div id="game-started" style="display: none">
+        <h3>Make your guess</h3>
+        <form>
+            <input type="number" placeholder="Your Guess" id="player-guess">
+            <button type="button" onclick="make_guess()">Make Guess</button>
+        </form>
+        <h4>Interval: <span id="guess-interval">5</span></h4>
+        <h4>Guesses left: <span id="guesses-left-value"></span></h4>
+    </div>
+
+</div>
+
+</body>
+</html>
